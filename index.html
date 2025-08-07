@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu site legal Lucas git git </h1>
+
+    <h3>Escreva a sigla do seu país</h3>
+    <input type="text" id="sigla" placeholder="Ex: BR" />
+
+    </br>
+    <button onclick="validarPais()">Validar</button>
+</body>
+
+
+
+
+    <script>
+
+        // CamelCase
+        function validarPais() {
+            const country = document.getElementById("sigla").value
+            alert("Você digitou: " + country)
+        }
+
+        
+
+        if(country == "BR") {
+            alert("Você está no Brasil!")
+        } else if(country == "EUA") {
+            alert("Você está nos Estados Unidos!")
+        } else {
+            alert("Não identifiquei o seu país")
+        }
+
+    </script>
+</body>
+</html>
